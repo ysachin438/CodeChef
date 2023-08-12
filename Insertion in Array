@@ -1,0 +1,15 @@
+// Inserting an element in unsorted array with given index
+#include<iostream>
+using namespace std;
+int insert(int index, int num){
+int temp = 0;
+for( int i = 0; a[i]!=0;i++){
+if( i == index){
+temp = a[i];
+a[i] = num;
+temp2 = a[i+1];
+
+}
+int main(){
+return 0;
+}

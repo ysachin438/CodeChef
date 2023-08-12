@@ -1,0 +1,23 @@
+// Vasya likes the number 239. Therefore, he considers a number pretty if its last digit is 2, 3 or 9.
+// Vasya wants to watch the numbers between L and R (both inclusive), so he asked you to determine how many pretty numbers are in this range.
+code:
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int L,R; // given range (L --> R)
+	    int count = 0; // assume initially she has Zero pretty numbers
+	    cin>>L>>R;
+	    for(int i =L; i<=R;i++){
+	        if(i%10 == 2 || i%10== 3 || i%10== 9){ //divide the number with 10 if reminder comes 2, 3 or 9 then number is considered to be pretty
+	            count++; //increment 'count'
+	        }
+	    }
+	    cout<<count<<endl;
+	}
+	return 0;
+}
